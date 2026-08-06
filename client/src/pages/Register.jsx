@@ -72,7 +72,7 @@ function Register() {
 
     if (!validateForm()) return;
 
-    setIsLoading(true);
+    setLoading(true);
 
     try {
       const response = await fetch("/api/users/register", {
